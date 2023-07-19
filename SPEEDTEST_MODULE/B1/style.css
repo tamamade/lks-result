@@ -1,0 +1,42 @@
+#container {
+  max-width: 960px;
+  margin: 2em auto;
+}
+.cols {
+  -moz-column-count: 3;
+  -moz-column-gap: 3%;
+  -moz-column-width: 30%;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 3%;
+  -webkit-column-width: 30%;
+  column-count: 3;
+  column-gap: 2%;
+  column-width: 30%;
+}
+.box {
+  margin-bottom: 20px;
+}
+.box.one {
+  height: 390px;
+  background-color: gray;
+}
+.box.two {
+  height: 200px;
+  background-color: gray;
+}
+.box.three {
+  background-color: gray;
+  height: 400px;
+}
+.box.four {
+  background-color: gray;
+  height: 500px;
+}
+.box.five {
+  background-color: gray;
+  height: 300px;
+}
+.box.six {
+  background-color: gray;
+  height: 250px;
+}

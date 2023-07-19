@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .img-comp-container {
+        position: relative;
+      }
+
+      .img-comp-img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .img-comp-img img {
+        display: block;
+      }
+
+      .img-comp-slider {
+        position: absolute;
+        z-index: 9;
+        cursor: ew-resize;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      .img-diff {
+        filter: grayscale();
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-comp-container">
+      <div class="img-comp-img">
+        <img src="image.webp" width="600" />
+      </div>
+      <div class="img-comp-img img-comp-overlay">
+        <img src="image.webp" width="600" class="img-diff" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

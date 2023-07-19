@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./image/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hexaria</title>
+  </head>
+  <body>
+    <div class="welcome-screen">
+      <div class="introduction">
+        <h3>Welcome To</h3>
+        <img src="./image/logo.png" class="img-logo" />
+        <p>
+          People love to play challenging games which require the player's effort to think. Games will be more challenging if there are
+          numbers involved. Nevertheless, a multiplayer game can be more fun if people play it together.
+        </p>
+        <div class="input-group" style="margin-top: 20px">
+          <div class="name" style="margin-bottom: 10px">
+            <label for="name">Your Name :</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="enemy" style="margin-bottom: 10px">
+            <label for="enemy">Compete With :</label>
+            <select id="enemy">
+              <option value="player">Bot</option>
+              <option value="bot">Player 2</option>
+            </select>
+          </div>
+          <div class="player-2-name" style="margin-bottom: 10px">
+            <label for="player-2-input">Player 2 Name :</label>
+            <input type="text" id="player-2-input" />
+          </div>
+          <div class="difficulty" style="margin-bottom: 10px">
+            <label for="difficulty">Difficulty :</label>
+            <select id="difficulty">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+        <button class="play-button" disabled>Play Game</button>
+      </div>
+      <div class="game-instruction">
+        <h3>Game Instruction</h3>
+        <ul>
+          <li>1. Player 1 can choose to compete with Player 2 or Bot.</li>
+          <li>2. If the user chooses to compete with Player 2, Player 1 must input the Player 1’s name and Player 2’s name.</li>
+          <li>
+            3. The game board consists of a 10x8 hexagon block. 12. Disabled hexagon will appear in the random hexagon with grayish-color:
+            <br />
+            a. 4 disabled hexagon for easy level
+            <br />
+            b. 6 disabled hexagon for medium level
+            <br />
+            c. 8 disabled hexagon for hard level
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img src="./image/logo.png" class="img-logo" />
+    <div class="container-game">
+      <div class="game-board">
+        <div class="tile-section">
+          <div class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+        <div class="current-playing">
+          Current :
+          <div class="hex-score">
+            <span class="score">1</span>
+          </div>
+        </div>
+        <div class="current-score">
+          <div class="score-player">
+            <p class="player-1-nama"><span class="player-1"></span>Budi</p>
+            <h3>0</h3>
+          </div>
+          <div class="score-player">
+            <p class="player-2-nama"><span class="player-2"></span>Budi</p>
+            <h3>0</h3>
+          </div>
+        </div>
+      </div>
+      <div class="score-board">
+        <h2>Leaderboard</h2>
+        <div class="sort-section">
+          <label for="sort">Sort By :</label>
+          <select id="sort">
+            <option value="date">Date</option>
+            <option value="score">Highest Score</option>
+          </select>
+        </div>
+        <div class="player-score">
+          <div class="player-name">
+            <p>Budi vs Irfan</p>
+            <p>48 - 32</p>
+          </div>
+          <button>Detail</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
